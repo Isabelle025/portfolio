@@ -1,6 +1,7 @@
 body{
     box-sizing: border-box;
     margin: 0;
+    width: 100vw;
 }
 
 .container{
@@ -8,3 +9,36 @@ body{
     height: 100vh;
     background-color: #031b1d;
 }
+
+.header{
+    width: 100%;
+}
+
+.rubrics{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3.125rem;
+}
+
+.propos, .link_contact{
+    font-family: 'Roboto', sans-serif;
+    color: #eae8ff;
+    font-weight: 700;
+    font-size: 3rem;
+    margin:0;
+}
+
+.logo_CV{
+    background: url('images/logo_projects.png') no-repeat;
+    width: 100px;
+    height: 100px;
+}
+
+.logo_projects{
+    background: url('images/logo_cv.png') no-repeat;
+    width: 100px;
+    height: 100px;
+}
+
+
