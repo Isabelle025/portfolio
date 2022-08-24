@@ -71,7 +71,7 @@ body{
     font-size: 48px;
 }
 
-.title_skills{
+.title_skills, .title_projects{
     font-family: 'Roboto', sans-serif;
     color: #d9d9d9;
     font-weight: 700;
@@ -115,11 +115,37 @@ p {
 }
 
 .JAVASCRIPT{
-    width: 80%;
+    width: 90%;
 }
 
 .PHP {
-    width: 90%;
+    width: 80%;
+}
+
+.projects{
+    margin: 0 130px 0 130px;
+}
+
+.project1{
+    display: flex;
+    gap:100px;
+}
+
+.oeuvre1{
+    border-radius: 15px;
+}
+
+.title_project1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #1c9494;
+    font-size: 40px;
+}
+
+.desciption_project1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
 }
 
 
