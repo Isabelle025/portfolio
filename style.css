@@ -44,9 +44,9 @@ body{
     padding-top: 100px;
 }
 .photo{
-    background:url('images/avatar-gratuit.png') no-repeat;
-    width: 500px; 
-    height: 500px;
+    background:url('images/avatar.png') no-repeat;
+    width: 530px; 
+    height: 590px;
 }
 
 .presentation{
