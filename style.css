@@ -131,43 +131,43 @@ p {
     gap:100px;
 }
 
-.oeuvre1, .oeuvre2{
+.oeuvre1, .oeuvre2, .oeuvre3, .oeuvre4{
     border-radius: 15px;
 }
 
-.right_project1{
+.right_project1, .right_project3{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.title_project1, .title_project2{
+.title_project1, .title_project2, .title_project3, .title_project4{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #1c9494;
     font-size: 40px;
 }
 
-.desciption_project1, .desciption_project2{
+.description_project1, .description_project2, .description_project3, .description_project4{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 24px;
 }
 
-.programs_project1{
+.programs_project1, .programs_project2, .programs_project3, .programs_project4{
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.project2{
-    margin-top: 100px;
+.project2, .project3, .project4{
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     gap: 100px;
 }
 
-.left_project2{
+.left_project2, .left_project4{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
