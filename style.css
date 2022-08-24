@@ -1,17 +1,13 @@
 body{
     box-sizing: border-box;
     margin: 0;
-    width: 100vw;
+    width: 100%;
 }
 
 .container{
-    width: 100vw;
-    height: 100vh;
-    background-color: #031b1d;
-}
-
-.header{
     width: 100%;
+    height: auto;
+    background-color: #031b1d;
 }
 
 .rubrics{
@@ -51,6 +47,28 @@ body{
     background:url('images/avatar-gratuit.png') no-repeat;
     width: 500px; 
     height: 533px;
+}
+
+.presentation{
+    text-align: center;
+    margin: 100px 300px;
+}
+
+.title_propos{
+    font-family: 'Roboto', sans-serif;
+    color: #d9d9d9;
+    font-weight: 700;
+    font-size: 96px;
+    text-transform: uppercase;
+    text-decoration: underline #1c9494;
+    display: inline-block;
+}
+
+.first_chapter, .second_chapter{
+    font-family: 'Roboto', sans-serif;
+    color: #d9d9d9;
+    font-weight: 400;
+    font-size: 48px;
 }
 
 
