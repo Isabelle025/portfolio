@@ -131,7 +131,7 @@ p {
     gap:100px;
 }
 
-.oeuvre1{
+.oeuvre1, .oeuvre2{
     border-radius: 15px;
 }
 
@@ -141,14 +141,14 @@ p {
     justify-content: space-between;
 }
 
-.title_project1{
+.title_project1, .title_project2{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #1c9494;
     font-size: 40px;
 }
 
-.desciption_project1{
+.desciption_project1, .desciption_project2{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -158,6 +158,19 @@ p {
     display: flex;
     align-items: center;
     gap: 30px;
+}
+
+.project2{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.left_project2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
