@@ -2,6 +2,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     width: 100%;
+    
 }
 
 .container{
@@ -52,6 +53,11 @@ body{
 .presentation{
     text-align: center;
     margin: 100px 300px;
+    overflow-x: hidden;
+}
+
+.underline{
+    text-decoration: underline #1c9494;
 }
 
 .first_chapter{
@@ -69,7 +75,7 @@ body{
         transform: translateX(0%);
         
     }
-}
+} 
 
 .second_chapter{
     animation-duration: 4s;
@@ -94,8 +100,6 @@ body{
     font-weight: 700;
     font-size: 96px;
     text-transform: uppercase;
-    text-decoration: underline #1c9494;
-    display: inline-block;
 }
 
 .first_chapter, .second_chapter{
@@ -118,7 +122,7 @@ body{
     margin-left: 150px;
 }
 
-p {
+.different_skills > p{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 40px;
@@ -186,6 +190,7 @@ p {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 24px;
+    color: #fbfbfb;
 }
 
 .programs_project1, .programs_project2, .programs_project3, .programs_project4{
@@ -292,15 +297,15 @@ input[type=submit] {
     gap: 30px;
 }
 
-.complete_address{
-    display: block;
-}
-
 .complete_address, .email_address, .phone_number, .link_linkedin, .link_github{
     font-family: 'Roboto', sans-serif;
     color: #d9d9d9;
     font-size: 24px;
     font-weight: 400;
+}
+
+.complete_address{
+    margin:0;
 }
 
 
