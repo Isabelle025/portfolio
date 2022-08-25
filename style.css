@@ -308,6 +308,14 @@ input[type=submit] {
     margin:0;
 }
 
+.mentions_legales{
+    font-family: 'Roboto', sans-serif;
+    color: #d9d9d9;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
 
 
 
