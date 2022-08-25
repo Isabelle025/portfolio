@@ -181,6 +181,10 @@ p {
     text-align: center;
 }
 
+.formulaire_contact{
+    margin-left: 8.125rem;
+}
+
 input[type=text], textarea, input[type=submit] {
     width: 50%;
     padding: 12px;
@@ -194,8 +198,21 @@ input[type=text], textarea, input[type=submit] {
     resize: vertical;
 }
 
+#name{
+    width: 20%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    resize: vertical;
+}
+
 input[type=email]{
-    width: 25%;
+    width: 23.3%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -209,6 +226,7 @@ input[type=email]{
 
 .form_contact1{
     display: flex;
+    gap: 30px;
 }
 
 .form_contact2{
