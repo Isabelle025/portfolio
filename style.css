@@ -181,12 +181,18 @@ p {
     text-align: center;
 }
 
+.complete_contact{
+    display: flex;
+    justify-content: space-between;
+}
+
 .formulaire_contact{
     margin-left: 8.125rem;
+    width: 50%;  
 }
 
 input[type=text], textarea, input[type=submit] {
-    width: 50%;
+    width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -245,7 +251,24 @@ input[type=submit] {
     border: none;
     border-radius: 6px;
     cursor: pointer;
-  }
+}
+
+.bloc_address, .bloc_mail, .bloc_phone{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.complete_address{
+    display: block;
+}
+
+.complete_address, .email_address, .phone_number{
+    font-family: 'Roboto', sans-serif;
+    color: #d9d9d9;
+    font-size: 24px;
+    font-weight: 400;
+}
 
 
 
