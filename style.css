@@ -54,6 +54,40 @@ body{
     margin: 100px 300px;
 }
 
+.first_chapter{
+    animation-duration: 4s;
+    animation-name: slidein;
+}
+      
+@keyframes slidein {
+    from {
+        transform: translateX(100%);
+        
+    }
+      
+    to {
+        transform: translateX(0%);
+        
+    }
+}
+
+.second_chapter{
+    animation-duration: 4s;
+    animation-name: slideout;
+}
+      
+@keyframes slideout {
+    from {
+        transform: translateX(-100%);
+        
+    }
+      
+    to {
+        transform: translateX(0%);
+        
+    }
+}
+
 .title_propos{
     font-family: 'Roboto', sans-serif;
     color: #d9d9d9;
