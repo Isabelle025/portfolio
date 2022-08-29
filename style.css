@@ -242,6 +242,11 @@ canvas {
     font-size: 2vw;
 }
 
+.title_project1 > a{
+    text-decoration: none;
+    color: #1c9494;
+}
+
 .description_project1, .description_project2, .description_project3, .description_project4{
     font-weight: 700;
     font-size: 1.25vw;
