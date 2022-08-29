@@ -8,6 +8,7 @@ body{
     width: 100%;
     height: auto;
     background-color: #031b1d;
+    font-family: 'Roboto', sans-serif;
 }
 
 canvas {
@@ -35,7 +36,6 @@ canvas {
 }
 
 .propos, .link_contact, .name, .profession{
-    font-family: 'Roboto', sans-serif;
     color: #eae8ff;
     font-weight: 700;
     font-size: 2.5vw;
@@ -132,7 +132,6 @@ canvas {
 }
 
 #title_propos{
-    font-family: 'Roboto', sans-serif;
     color: #d9d9d9;
     font-weight: 700;
     font-size: 5vw;
@@ -140,14 +139,12 @@ canvas {
 }
 
 .first_chapter, .second_chapter{
-    font-family: 'Roboto', sans-serif;
     color: #d9d9d9;
     font-weight: 400;
     font-size: 2.5vw;
 }
 
 .title_skills, .title_projects, .title_contact{
-    font-family: 'Roboto', sans-serif;
     color: #d9d9d9;
     font-weight: 700;
     font-size: 5vw;
@@ -161,7 +158,7 @@ canvas {
 }
 
 .different_skills > p{
-    font-family: 'Roboto', sans-serif;
+    
     font-weight: 700;
     font-size: 1vw;
     color: #d9d9d9;
@@ -208,7 +205,6 @@ canvas {
 }
 
 .tagcloud {
-    font-family: 'Roboto', sans-serif;  
     font-size: 1vw;
     margin: auto;
     width: 50%;
@@ -241,14 +237,12 @@ canvas {
 }
 
 .title_project1, .title_project2, .title_project3, .title_project4{
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #1c9494;
     font-size: 2vw;
 }
 
 .description_project1, .description_project2, .description_project3, .description_project4{
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 1.25vw;
     color: #fbfbfb;
@@ -289,7 +283,6 @@ canvas {
 }
 
 .sentence_contact{
-    font-family: 'Roboto', sans-serif;
     color: #d9d9d9;
     font-size: 2.5vw;
     font-weight: 400;
@@ -374,7 +367,6 @@ input[type=submit] {
 }
 
 .complete_address, .email_address, .phone_number, .link_linkedin, .link_github{
-    font-family: 'Roboto', sans-serif;
     color: #d9d9d9;
     font-size: 24px;
     font-weight: 400;
@@ -385,7 +377,6 @@ input[type=submit] {
 }
 
 .mentions_legales{
-    font-family: 'Roboto', sans-serif;
     color: #d9d9d9;
     font-weight: 400;
     font-size: 20px;
