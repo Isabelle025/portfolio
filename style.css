@@ -30,7 +30,7 @@ canvas {
     padding-top: 3.125rem;
     position: absolute;
     left: 20%;
-    gap: 100px;
+    gap: 5.2vw;
 }
 
 .propos, .link_contact, .name, .profession{
@@ -43,33 +43,32 @@ canvas {
 
 .logo_CV{
     background: url('images/logo_projects.png') no-repeat;
-    width: 100px;
-    height: 100px;
+    width: 5.2vw;
+    height: 10.5vh;
 }
 
 .logo_projects{
     background: url('images/logo_cv.png') no-repeat;
-    width: 100px;
-    height: 100px;
+    width: 5.2vw;
+    height: 10.5vh;
 }
 
 .images{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 200px;
+    padding-top: 10.4vw;
     position: absolute;
     left: 30%;
 }
 .photo{
-    background:url('images/avatar.png') no-repeat;
-    width: 530px; 
-    height: 590px;
+    width: 27.6vw; 
+    height: 61.8vh;
 }
 
 .presentation{
     text-align: center;
-    margin: 100px 300px;
+    margin: 5.2vw 15.6vw;
     overflow-x: hidden;
 }
 
@@ -115,7 +114,7 @@ canvas {
     font-family: 'Roboto', sans-serif;
     color: #d9d9d9;
     font-weight: 700;
-    font-size: 96px;
+    font-size: 5vw;
     text-transform: uppercase;
 }
 
@@ -123,27 +122,27 @@ canvas {
     font-family: 'Roboto', sans-serif;
     color: #d9d9d9;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 2.5vw;
 }
 
 .title_skills, .title_projects, .title_contact{
     font-family: 'Roboto', sans-serif;
     color: #d9d9d9;
     font-weight: 700;
-    font-size: 96px;
+    font-size: 5vw;
     text-transform: uppercase;
     text-align: center;
 }
 
 .different_skills{
     margin-left: 150px;
-    width: 100%;
+    width: 100vw;
 }
 
 .different_skills > p{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1vw;
     color: #d9d9d9;
 }
 
@@ -158,7 +157,7 @@ canvas {
     color: white;
     padding: 2%;
     text-align: right;
-    font-size: 20px;
+    font-size: 1vw;
     border-radius: 15px;
 }
 
@@ -189,7 +188,7 @@ canvas {
 
 .tagcloud {
     font-family: 'Roboto', sans-serif;  
-    font-size: 20px;
+    font-size: 1vw;
     margin: auto;
     width: 50%;
 }
@@ -205,7 +204,7 @@ canvas {
 
 .project1{
     display: flex;
-    gap:100px;
+    gap:6.25rem;
 }
 
 .oeuvre1, .oeuvre2, .oeuvre3, .oeuvre4{
@@ -222,27 +221,27 @@ canvas {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #1c9494;
-    font-size: 40px;
+    font-size: 2vw;
 }
 
 .description_project1, .description_project2, .description_project3, .description_project4{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.25vw;
     color: #fbfbfb;
 }
 
 .programs_project1, .programs_project2, .programs_project3, .programs_project4{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 1.875rem;
 }
 
 .project2, .project3, .project4{
     margin-top: 50px;
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 6.25rem;
 }
 
 .left_project2, .left_project4{
@@ -254,7 +253,7 @@ canvas {
 .sentence_contact{
     font-family: 'Roboto', sans-serif;
     color: #d9d9d9;
-    font-size: 48px;
+    font-size: 2.5vw;
     font-weight: 400;
     text-align: center;
 }
