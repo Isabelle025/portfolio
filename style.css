@@ -42,13 +42,11 @@ canvas {
 }
 
 .logo_CV{
-    background: url('images/logo_projects.png') no-repeat;
     width: 5.2vw;
     height: 10.5vh;
 }
 
 .logo_projects{
-    background: url('images/logo_cv.png') no-repeat;
     width: 5.2vw;
     height: 10.5vh;
 }
