@@ -2,7 +2,6 @@ body{
     box-sizing: border-box;
     margin: 0;
     width: 100%;
-    
 }
 
 .container{
@@ -11,11 +10,27 @@ body{
     background-color: #031b1d;
 }
 
+canvas {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+  
+#particles-js {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: #03181D;
+}
+
 .rubrics{
     display: flex;
-    justify-content: space-around;
     align-items: center;
     padding-top: 3.125rem;
+    position: absolute;
+    left: 20%;
+    gap: 100px;
 }
 
 .propos, .link_contact, .name, .profession{
@@ -42,7 +57,9 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 200px;
+    position: absolute;
+    left: 30%;
 }
 .photo{
     background:url('images/avatar.png') no-repeat;
