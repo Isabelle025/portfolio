@@ -29,7 +29,7 @@ canvas {
     align-items: center;
     padding-top: 3.125rem;
     position: absolute;
-    left: 20%;
+    transform: translateX(50%);
     gap: 5.2vw;
 }
 
@@ -37,8 +37,12 @@ canvas {
     font-family: 'Roboto', sans-serif;
     color: #eae8ff;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.5vw;
     margin:0;
+}
+
+.name, .profession{
+    margin-top: .625rem;
 }
 
 .logo_CV{
@@ -57,11 +61,11 @@ canvas {
     flex-direction: column;
     padding-top: 10.4vw;
     position: absolute;
-    left: 30%;
+    transform: translateX(80%);
 }
 .photo{
-    width: 27.6vw; 
-    height: 61.8vh;
+    width: 23vw; 
+    height: 50.2vh;
 }
 
 .presentation{
@@ -366,6 +370,8 @@ input[type=submit] {
     color: #d9d9d9;
     font-weight: 400;
     font-size: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
     text-align: center;
 }
 
