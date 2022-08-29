@@ -120,12 +120,13 @@ body{
 
 .different_skills{
     margin-left: 150px;
+    width: 100%;
 }
 
 .different_skills > p{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 20px;
     color: #d9d9d9;
 }
 
@@ -159,6 +160,27 @@ body{
 .PHP {
     width: 80%;
 }
+
+.skills_container{
+    display: flex;
+    flex-direction: row;
+}
+
+.content{
+    width:50%;
+}
+
+.tagcloud {
+    font-family: 'Roboto', sans-serif;  
+    font-size: 20px;
+    margin: auto;
+    width: 50%;
+}
+  
+.tagcloud--item:hover {
+    color: #36454F;
+}
+
 
 .projects{
     margin: 0 130px 0 130px;
