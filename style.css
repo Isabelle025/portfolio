@@ -41,6 +41,15 @@ canvas {
     margin:0;
 }
 
+.propos, .contact_path{
+    cursor: pointer;
+}
+
+.propos > a, .link_contact > a{
+    text-decoration: none;
+    color:#eae8ff;
+}
+
 .name, .profession{
     margin-top: .625rem;
 }
@@ -112,7 +121,7 @@ canvas {
     }
 }
 
-.title_propos{
+#title_propos{
     font-family: 'Roboto', sans-serif;
     color: #d9d9d9;
     font-weight: 700;
