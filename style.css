@@ -56,7 +56,7 @@ canvas {
     color:#1C9494;
 }
 
-.logo_projects:hover{
+.logo_projects:hover, .logo_CV:hover{
     filter: invert(48%) sepia(88%) saturate(390%) hue-rotate(131deg) brightness(83%) contrast(90%);
 }
 
@@ -379,6 +379,9 @@ input[type=submit] {
 
 .complete_address{
     margin:0;
+}
+.linkedin:hover, .github_bis:hover{
+    filter: invert(73%) sepia(52%) saturate(1%) hue-rotate(344deg) brightness(104%) contrast(103%);
 }
 
 .mentions_legales{
