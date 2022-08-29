@@ -31,6 +31,7 @@ canvas {
     position: absolute;
     transform: translateX(50%);
     gap: 5.2vw;
+    z-index: 999;
 }
 
 .propos, .link_contact, .name, .profession{
@@ -41,13 +42,22 @@ canvas {
     margin:0;
 }
 
-.propos, .contact_path{
+.propos, .link_contact, .logo_projects{
     cursor: pointer;
 }
 
-.propos > a, .link_contact > a{
+.propos > a, .link_contact > a, .logo_projects > a{
     text-decoration: none;
     color:#eae8ff;
+}
+
+.propos :hover, .link_contact :hover{
+    text-decoration: none;
+    color:#1C9494;
+}
+
+.logo_projects:hover{
+    filter: invert(48%) sepia(88%) saturate(390%) hue-rotate(131deg) brightness(83%) contrast(90%);
 }
 
 .name, .profession{
@@ -209,7 +219,7 @@ canvas {
 }
 
 
-.projects{
+#projects{
     margin: 0 130px 0 130px;
 }
 

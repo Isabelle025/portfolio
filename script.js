@@ -47,7 +47,7 @@ particlesJS('particles-js', {
     retina_detect: true
   });
 
-/*observer présentation start*/
+/*observer présentation*/
 
 const firstChapter = document.querySelector(".first_chapter");
 const secondChapter = document.querySelector(".second_chapter");
