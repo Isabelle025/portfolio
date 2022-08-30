@@ -30,28 +30,28 @@ canvas {
     align-items: center;
     padding-top: 3.125rem;
     position: absolute;
-    transform: translateX(50%);
+    transform: translateX(20%);
     gap: 5.2vw;
     z-index: 999;
 }
 
-.propos, .link_contact, .name, .profession{
+.propos, .competences, .link_contact, .name, .profession{
     color: #eae8ff;
     font-weight: 700;
     font-size: 2.5vw;
     margin:0;
 }
 
-.propos, .link_contact, .logo_projects{
+.propos, .competences, .link_contact, .logo_projects{
     cursor: pointer;
 }
 
-.propos > a, .link_contact > a, .logo_projects > a{
+.propos > a, .competences > a, .link_contact > a, .logo_projects > a{
     text-decoration: none;
     color:#eae8ff;
 }
 
-.propos :hover, .link_contact :hover{
+.propos :hover, .competences :hover, .link_contact :hover{
     text-decoration: none;
     color:#1C9494;
 }

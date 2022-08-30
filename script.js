@@ -75,7 +75,9 @@ const callback = function( entries ) {
     observer.observe(firstChapter);    
     observer.observe(secondChapter);
 
-    // document.querySelector(".propos").onclick = function(entries)
+   
+  //  const propos = document.querySelector(".propos").onclick = function(entries);
+    
     
 // script pour le nuage de mots
 const myTags = [
