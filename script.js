@@ -80,9 +80,6 @@ const callback = function( entries ) {
     const observer = new IntersectionObserver(callback);
     observer.observe(firstChapter);    
     observer.observe(secondChapter);
-
-   
-  //  const propos = document.querySelector(".propos").onclick = function(entries);
     
     
 // script pour le nuage de mots
