@@ -1,11 +1,11 @@
+/*script pour la flèche de retour en haut*/
 document.addEventListener('DOMContentLoaded', function() {
-  window.onscroll = function(ev) {
-    document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+  window.onscroll = function(event) {
+    document.getElementById("back").className = (window.pageYOffset > 100) ? "Visible" : "Invisible";
   };
 });
 
 /*script pour les particles*/
-
 particlesJS('particles-js', {
     particles: {
       color: '#1c9494',
@@ -91,11 +91,8 @@ const myTags = [
 
 var tagCloud = TagCloud('.content', myTags,{
 
-  // radius in px
   radius: 200,
 
-  // animation speed
-  // slow, normal, fast
   maxSpeed: 'normal',
   initSpeed: 'normal',
 
@@ -104,12 +101,12 @@ var tagCloud = TagCloud('.content', myTags,{
   // 135 = right-bottom
   direction: 135,
   
-  // interact with cursor move on mouse out
+  // intéraction avec la souris
   keep: true
   
 });
 
-//To change the color of text randomly
+//pour changer la couleur du texte de manière aléatoire
 var colors = ['#34A853', '#FBBC05', '#4285F4', '#7FBC00', '#FFBA01', '#01A6F0'];
 var random_color = colors[Math.floor(Math.random() * colors.length)];
 document.querySelector('.content').style.color = random_color;

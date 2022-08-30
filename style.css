@@ -19,7 +19,7 @@ h1{
     position:absolute;
 }
 
-a#cRetour{
+a#back{
     border-radius:3px;
     padding:10px;
     font-size:15px;
@@ -36,22 +36,22 @@ a#cRetour{
     text-decoration: none;
 }
 
-a#cRetour:before{ 
+a#back:before{ 
     content: "\25b2"; 
 }
 
-a#cRetour:hover{
+a#back:hover{
     background:rgba(0, 0, 0, 1);
     transition:all ease-in 0.2s;
 }
 
-a#cRetour.cInvisible{
+a#back.Invisible{
     bottom:-35px;
     opacity:0;
     transition:all ease-in 0.5s;
 }
   
-a#cRetour.cVisible{
+a#back.Visible{
     bottom:20px;
     opacity:1;
 }
