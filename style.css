@@ -224,9 +224,14 @@ canvas {
     gap:6.25rem;
 }
 
-.oeuvre1, .oeuvre2, .oeuvre3, .oeuvre4{
+.oeuvre1, .oeuvre2{
     border-radius: 15px;
     height:56vh;
+}
+
+.oeuvre3, .oeuvre4{
+    width: 23.4vw;
+    height: 27vh;
 }
 
 .right_project1, .right_project3{
