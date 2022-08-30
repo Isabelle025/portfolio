@@ -291,8 +291,8 @@ canvas {
 }
 
 .oeuvre3, .oeuvre4{
-    width: 23.4vw;
-    height: 27vh;
+    width: 28.125rem;
+    height: 16.125rem;
 }
 
 .right_project1, .right_project3{
@@ -467,6 +467,12 @@ input[type=submit] {
         flex-direction: column;
     }
 
+    .skills{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
     .project1, .project3 {
         flex-direction: column;
     }
@@ -501,6 +507,28 @@ input[type=submit] {
         flex-direction: row;
         align-items: center;
         gap: 10px;
+    }
+
+    .title_project1, .title_project2, .title_project3, .title_project4{
+        text-align: center;
+    }
+
+    .formulaire_contact{
+        margin: auto;
+        width: 90%;}
+
+    .complete_contact{
+        flex-direction: column;
+    }
+
+    .coordonnees{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .coordonnees_bottom{
+        align-items: start;
     }
 }
 
