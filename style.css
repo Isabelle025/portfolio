@@ -486,6 +486,11 @@ input[type=submit] {
         gap: 3.125rem;
     }
 
+    .project2 > .descrip_prog{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
     .programs_project1{
         display: flex;
         flex-direction: column;
