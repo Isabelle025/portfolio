@@ -486,7 +486,7 @@ input[type=submit] {
         gap: 3.125rem;
     }
 
-    .project2 > .descrip_prog{
+    .left_project2 > .descrip_prog, .left_project4 > .descrip_prog{
         display: flex;
         flex-direction: row-reverse;
     }
