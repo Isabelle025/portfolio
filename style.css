@@ -152,13 +152,17 @@ canvas {
     text-align: center;
 }
 
+.specific_skills{
+    color: #d9d9d9;
+    font-size: 30px;
+}
+
 .different_skills{
     margin-left: 150px;
     width: 100vw;
 }
 
 .different_skills > p{
-    
     font-weight: 700;
     font-size: 1vw;
     color: #d9d9d9;
