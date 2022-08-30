@@ -143,8 +143,20 @@ canvas {
 }
 
 .first_chapter{
-    animation-duration: 4s;
+    animation-duration: 6s;
     animation-name: slidein;
+    display: flex;
+    align-items: center;
+}
+
+.second_chapter{
+    display: flex;
+    align-items: center;
+}
+
+.star{
+    width: 3.125rem;
+    height: 3.125rem;
 }
       
 @keyframes slidein {
