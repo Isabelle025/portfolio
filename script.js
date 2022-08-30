@@ -1,5 +1,5 @@
-/*script pour les particle*/
-/* config dom id (optional) + config particles params */
+/*script pour les particles*/
+
 particlesJS('particles-js', {
     particles: {
       color: '#1c9494',
@@ -75,6 +75,7 @@ const callback = function( entries ) {
     observer.observe(firstChapter);    
     observer.observe(secondChapter);
 
+    // document.querySelector(".propos").onclick = function(entries)
     
 // script pour le nuage de mots
 const myTags = [
