@@ -264,7 +264,7 @@ canvas {
 }
 
 .project2, .project3, .project4{
-    margin-top: 50px;
+    margin-top: 150px;
     display: flex;
     flex-direction: row;
     gap: 6.25rem;
