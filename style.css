@@ -217,7 +217,7 @@ canvas {
 
 .different_skills{
     margin-left: 150px;
-    width: 100vw;
+    width: 60%;
 }
 
 .different_skills > p{
@@ -491,6 +491,15 @@ input[type=submit] {
         display: flex;
         justify-content: center;
         flex-direction: column;
+    }
+
+    .different_skills{
+        margin: auto;
+        width: 80%;
+    }
+
+    .progressbar{
+        width: 100%;
     }
 
     .content{
