@@ -123,13 +123,14 @@ canvas {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 10.4vw;
+    padding-top: 12.5rem;
     position: absolute;
     transform: translateX(80%);
 }
+
 .photo{
-    width: 23vw; 
-    height: 50.2vh;
+    width: 27.5625rem; 
+    height: 30rem;
 }
 
 .presentation{
@@ -442,13 +443,19 @@ input[type=submit] {
 
 .complete_address, .email_address, .phone_number, .link_linkedin, .link_github{
     color: #d9d9d9;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
 .complete_address{
     margin:0;
 }
+
+.address, .mail, .phone, .linkedin, .github_bis{
+    width: 2.6vw;
+    height: 2.6vw;
+}
+
 .linkedin:hover, .github_bis:hover{
     filter: invert(73%) sepia(52%) saturate(1%) hue-rotate(344deg) brightness(104%) contrast(103%);
 }
@@ -456,13 +463,26 @@ input[type=submit] {
 .mentions_legales{
     color: #d9d9d9;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 0px;
     padding-bottom: 20px;
     text-align: center;
 }
 
 @media screen and (max-width: 768px) {
+    .rubrics{
+        padding-top: .625rem;
+    }
+
+    .images{
+        padding-top: 5rem;
+    }
+
+    .photo{
+        width: 9.375rem; 
+        height: 11.25rem;
+    }
+
     .skills_container{
         flex-direction: column;
     }
@@ -471,6 +491,10 @@ input[type=submit] {
         display: flex;
         justify-content: center;
         flex-direction: column;
+    }
+
+    .content{
+        margin: auto;
     }
 
     .project1, .project3 {
