@@ -557,11 +557,15 @@ input[type=submit] {
     .coordonnees{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .coordonnees_bottom{
         align-items: start;
+    }
+
+    .complete_address, .email_address, .phone_number, .link_linkedin, .link_github{
+        font-size: 1rem;
     }
 }
 
