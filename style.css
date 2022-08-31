@@ -306,7 +306,7 @@ canvas {
 .title_project1, .title_project2, .title_project3, .title_project4{
     font-weight: 700;
     color: #1c9494;
-    font-size: 2vw;
+    font-size: 1.75rem;
 }
 
 .title_project1 > a{
@@ -515,6 +515,7 @@ input[type=submit] {
     .tagcloud{
         font-size: 3vw;
         width: 100%;
+        display: none;
     }
 
     #projects{
@@ -543,6 +544,14 @@ input[type=submit] {
     .oeuvre3, .oeuvre4{
         width: 15.625rem;
         height: 12.5625rem;
+    }
+
+    .project1, .project2, .project3, .project4{
+        gap: 0;
+    }
+
+    .right_project1{
+        margin: 0;
     }
 
     .project1, .project3 {
