@@ -479,7 +479,146 @@ input[type=submit] {
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~responsive~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @media screen and (min-width: 320px) and (max-width: 577px){
+    .rubrics{
+        font-size: 2rem;
+        padding-top: 0px;
+    }
 
+    .images{
+        padding-top: 5rem;
+    }
+
+    .photo{
+        width: 3rem; 
+        height: 4rem;
+    }
+
+    .skills_container{
+        flex-direction: column;
+    }
+
+    .skills{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .different_skills{
+        margin: auto;
+        width: 80%;
+    }
+
+    .progressbar{
+        width: 100%;
+    }
+
+    .tagcloud{
+        font-size: 3vw;
+        width: 100%;
+    }
+
+    #projects{
+        margin: 0px;
+    }
+
+    .js, .github{
+        width: 5vw;
+        height: 5vw;
+    }
+    
+    .figma{
+        width: 4.5vw;
+        height: 6.3vh;
+    }
+
+    .title_project1, .title_project2, .title_project3, .title_project3, .title_project4{
+        font-size: 1.5rem;
+    }
+
+    .oeuvre1, .oeuvre2{
+        width: 15.625rem;
+        height: 10.6875rem;
+    }
+
+    .oeuvre3, .oeuvre4{
+        width: 15.625rem;
+        height: 12.5625rem;
+    }
+
+    .project1, .project3 {
+        flex-direction: column;
+    }
+
+    .project2, .project4{
+        flex-direction: column-reverse;
+    }
+
+    .left_project1, .right_project2, .left_project3, .right_project4{
+        display: flex;
+        margin: auto;
+    }
+
+    .right_project1{
+        flex-direction: column;
+        margin: 0px 50px 0px 100px;
+    }
+
+    .left_project2, .right_project3, .left_project4{
+        margin: 0px 50px 0px 100px;
+    }
+
+    .descrip_prog{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3.125rem;
+    }
+
+    .description_project1, .description_project2, .description_project3, .description_project4{
+        font-size: 0.75rem;
+    }
+
+    .left_project2 > .descrip_prog, .left_project4 > .descrip_prog{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .programs_project1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prog_top, .prog_bottom{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .title_project1, .title_project2, .title_project3, .title_project4{
+        text-align: center;
+    }
+
+    .formulaire_contact{
+        margin: auto;
+        width: 90%;}
+
+    .complete_contact{
+        flex-direction: column;
+    }
+
+    .coordonnees{
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .complete_address, .email_address, .phone_number, .link_linkedin, .link_github{
+        font-size: 1rem;
+    }
+
+    .mentions_legales{
+        font-size: .625rem;;
+    }
 }
 
 @media screen and (min-width: 578px) and (max-width: 768px) {
@@ -533,7 +672,7 @@ input[type=submit] {
     }
     
     .figma{
-        width: 3.5vw;
+        width: 4.5vw;
         height: 6.3vh;
     }
 
@@ -577,6 +716,151 @@ input[type=submit] {
 
     .description_project1, .description_project2, .description_project3, .description_project4{
         font-size: 0.75rem;
+    }
+
+    .left_project2 > .descrip_prog, .left_project4 > .descrip_prog{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .programs_project1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prog_top, .prog_bottom{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .title_project1, .title_project2, .title_project3, .title_project4{
+        text-align: center;
+    }
+
+    .formulaire_contact{
+        margin: auto;
+        width: 90%;}
+
+    .complete_contact{
+        flex-direction: column;
+    }
+
+    .coordonnees{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .coordonnees_bottom{
+        align-items: start;
+    }
+
+    .complete_address, .email_address, .phone_number, .link_linkedin, .link_github{
+        font-size: 1rem;
+    }
+
+    .mentions_legales{
+        font-size: 1rem;;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .rubrics{
+        padding-top: 0px;
+    }
+
+    .images{
+        padding-top: 5rem;
+    }
+
+    .photo{
+        width: 6.5rem; 
+        height: 8rem;
+    }
+
+    .skills_container{
+        flex-direction: column;
+    }
+
+    .skills{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .different_skills{
+        margin: auto;
+        width: 80%;
+    }
+
+    .progressbar{
+        width: 100%;
+    }
+
+    .content{
+        margin: auto;
+    }
+
+    .tagcloud{
+        font-size: 3vw;
+    }
+
+    #projects{
+        margin: 0px;
+    }
+
+    .js, .github{
+        width: 5vw;
+        height: 5vw;
+    }
+    
+    .figma{
+        width: 4.5vw;
+        height: 6.3vh;
+    }
+
+    .title_project1, .title_project2, .title_project3, .title_project3, .title_project4{
+        font-size: 1.5rem;
+    }
+
+    .oeuvre1, .oeuvre2{
+        width: 25rem;
+        height: 17.125rem;
+    }
+
+    .project1, .project3 {
+        flex-direction: column;
+    }
+
+    .project2, .project4{
+        flex-direction: column-reverse;
+    }
+
+    .left_project1, .right_project2, .left_project3, .right_project4{
+        display: flex;
+        margin: auto;
+    }
+
+    .right_project1{
+        flex-direction: column;
+        margin: 0px 50px 0px 100px;
+    }
+
+    .left_project2, .right_project3, .left_project4{
+        margin: 0px 50px 0px 100px;
+    }
+
+    .descrip_prog{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3.125rem;
+    }
+
+    .description_project1, .description_project2, .description_project3, .description_project4{
+        font-size: 1.25rem;
     }
 
     .left_project2 > .descrip_prog, .left_project4 > .descrip_prog{
