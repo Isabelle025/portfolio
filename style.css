@@ -129,8 +129,8 @@ canvas {
 }
 
 .photo{
-    width: 27.5625rem; 
-    height: 30rem;
+    width: 16.7vw; 
+    height: 35.7vh;
 }
 
 .presentation{
@@ -288,7 +288,8 @@ canvas {
 
 .oeuvre1, .oeuvre2{
     border-radius: 15px;
-    height:56vh;
+    height: 32rem;
+    width: 46.75rem;
 }
 
 .oeuvre3, .oeuvre4{
@@ -322,7 +323,13 @@ canvas {
 .programs_project1, .programs_project2, .programs_project3, .programs_project4{
     display: flex;
     align-items: center;
-    gap: 1.875rem;
+    gap: 10px;
+}
+
+.programs_project1 > .prog_top, .prog_bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .project2, .project3, .project4{
@@ -343,8 +350,8 @@ canvas {
 }
 
 .js, .github{
-    width: 2.6vw;
-    height: 2.6vw;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .css, .html{
@@ -353,8 +360,8 @@ canvas {
 }
 
 .figma{
-    width: 2.1vw;
-    height: 6.3vh;
+    width: 2.5rem;
+    height: 3rem;
 }
 
 .sentence_contact{
@@ -469,9 +476,15 @@ input[type=submit] {
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~responsive~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media screen and (min-width: 320px) and (max-width: 577px){
+
+}
+
+@media screen and (min-width: 578px) and (max-width: 768px) {
     .rubrics{
-        padding-top: .625rem;
+        padding-top: 0px;
     }
 
     .images{
@@ -479,8 +492,8 @@ input[type=submit] {
     }
 
     .photo{
-        width: 9.375rem; 
-        height: 11.25rem;
+        width: 6.5rem; 
+        height: 8rem;
     }
 
     .skills_container{
@@ -507,7 +520,30 @@ input[type=submit] {
     }
 
     .tagcloud{
-        font-size: 2vw;
+        font-size: 3vw;
+    }
+
+    #projects{
+        margin: 0px;
+    }
+
+    .js, .github{
+        width: 5vw;
+        height: 5vw;
+    }
+    
+    .figma{
+        width: 3.5vw;
+        height: 6.3vh;
+    }
+
+    .title_project1, .title_project2, .title_project3, .title_project3, .title_project4{
+        font-size: 1.5rem;
+    }
+
+    .oeuvre1, .oeuvre2{
+        width: 25rem;
+        height: 17.125rem;
     }
 
     .project1, .project3 {
@@ -518,8 +554,18 @@ input[type=submit] {
         flex-direction: column-reverse;
     }
 
+    .left_project1, .right_project2, .left_project3, .right_project4{
+        display: flex;
+        margin: auto;
+    }
+
     .right_project1{
         flex-direction: column;
+        margin: 0px 50px 0px 100px;
+    }
+
+    .left_project2, .right_project3, .left_project4{
+        margin: 0px 50px 0px 100px;
     }
 
     .descrip_prog{
@@ -530,7 +576,7 @@ input[type=submit] {
     }
 
     .description_project1, .description_project2, .description_project3, .description_project4{
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
 
     .left_project2 > .descrip_prog, .left_project4 > .descrip_prog{
