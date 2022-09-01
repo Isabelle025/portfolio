@@ -173,9 +173,16 @@
             <div class="complete_contact">
                 <!-- formulaire de contact -->
                 <div class="formulaire_contact">
+                <form id="signup" class="form">
                     <div class="form_contact1">
-                        <input type="text" id="name" placeholder="Nom">
-                        <input type="email" id="email" placeholder="Email">
+                        <div class="form-field">
+                        <input type="text" id="name" placeholder="Nom" autocomplete="off">
+                        <small></small>
+                        </div>
+                        <div class="form-field">
+                        <input type="email" id="email" placeholder="Email" autocomplete="off">
+                        <small></small>
+                        </div>
                     </div>
 
                     <div class="form_contact2">
@@ -183,6 +190,7 @@
                         <textarea id="msg" name="msg" placeholder="Message" style="height:200px"></textarea>
                         <input type="submit" value="Envoyer">
                     </div>
+                </form>
                 </div>
 
                 <!-- coordonnées -->

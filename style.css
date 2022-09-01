@@ -442,6 +442,25 @@ input[type=submit] {
     cursor: pointer;
 }
 
+.form-field input:focus {
+    outline: none;
+}
+
+.form-field.error input {
+    border-color: var(--error-color);
+}
+
+.form-field.success input {
+    border-color: var(--success-color);
+}
+
+
+.form-field small {
+    color: var(--error-color);
+    color: red;
+}
+
+
 .bloc_address, .bloc_mail, .bloc_phone, .bloc_linkedin, .bloc_github{
     display: flex;
     align-items: center;
