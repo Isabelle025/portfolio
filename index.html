@@ -186,8 +186,14 @@
                     </div>
 
                     <div class="form_contact2">
-                        <input type="text" id="sujet" placeholder="Sujet">
-                        <textarea id="msg" name="msg" placeholder="Message" style="height:200px"></textarea>
+                        <div class="form-field">
+                        <input type="text" id="sujet" placeholder="Sujet" autocomplete="off">
+                        <small></small>
+                        </div>
+                        <div class="form-field">
+                        <textarea id="msg" name="msg" placeholder="Message" style="height:200px" autocomplete="off"></textarea>
+                        <small></small>
+                        </div>
                         <input type="submit" value="Envoyer">
                     </div>
                 </form>

@@ -169,7 +169,6 @@ document.querySelector('.content').style.color = random_color;
 //   return true;
 // }
 
-const usernameEl = document.querySelector('#username');
 const emailEl = document.querySelector('#email');
 
 const form = document.querySelector('#signup');
@@ -182,14 +181,14 @@ const checkUsername = () => {
     const min = 3,
         max = 25;
 
-    const username = usernameEl.value.trim();
+const username = document.getElementById('name');
 
-    if (!isRequired(username)) {
-        showError(usernameEl, 'Username cannot be blank.');
-    } else if (!isBetween(username.length, min, max)) {
-        showError(usernameEl, `Username must be between ${min} and ${max} characters.`)
-    } else {
-        showSuccess(usernameEl);
+    if (username!="") {
+        showError(username, 'Merci de saisir un nom');
+    }else if (!isBetween(username.length, min, max)) {
+        showError(username, `Username must be between ${min} and ${max} characters.`)
+    }else {
+        showSuccess(username);
         valid = true;
     }
     return valid;
@@ -200,9 +199,9 @@ const checkEmail = () => {
     let valid = false;
     const email = emailEl.value.trim();
     if (!isRequired(email)) {
-        showError(emailEl, 'Email cannot be blank.');
+        showError(emailEl, 'Merci de saisir un email');
     } else if (!isEmailValid(email)) {
-        showError(emailEl, 'Email is not valid.')
+        showError(emailEl, 'Cet email est invalide')
     } else {
         showSuccess(emailEl);
         valid = true;
@@ -214,6 +213,45 @@ const isEmailValid = (email) => {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 };
+
+const checkSujet = () => {
+
+    let valid = false;
+
+    const min = 3,
+        max = 25;
+
+const sujet_error = document.getElementById('sujet');
+
+    if (sujet_error!="") {
+        showError(sujet_error, 'Merci de saisir un sujet');
+    }else {
+        showSuccess(sujet_error);
+        valid = true;
+    }
+    return valid;
+
+};
+
+const checkMsg = () => {
+
+    let valid = false;
+
+    const min = 3,
+        max = 25;
+
+const msg_error = document.getElementById('msg');
+
+    if (msg_error!="") {
+        showError(msg_error, 'Merci de saisir un message');
+    }else {
+        showSuccess(msg_error);
+        valid = true;
+    }
+    return valid;
+
+};
+
 
 const isRequired = value => value === '' ? false : true;
 const isBetween = (length, min, max) => length < min || length > max ? false : true;
@@ -252,13 +290,13 @@ form.addEventListener('submit', function (e) {
     // validate fields
     let isUsernameValid = checkUsername(),
         isEmailValid = checkEmail(),
-        isPasswordValid = checkPassword(),
-        isConfirmPasswordValid = checkConfirmPassword();
+        isSujetValid = checkSujet(),
+        isMsgValid = checkMsg();
 
     let isFormValid = isUsernameValid &&
         isEmailValid &&
-        isPasswordValid &&
-        isConfirmPasswordValid;
+        isSujetValid &&
+        isMsgValid;
 
     // submit to the server if the form is valid
     if (isFormValid) {
@@ -289,5 +327,6 @@ form.addEventListener('input', debounce(function (e) {
         case 'email':
             checkEmail();
             break;
+            console.log("submit");
     }
 }));

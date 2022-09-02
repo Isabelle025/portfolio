@@ -394,7 +394,7 @@ input[type=text], textarea, input[type=submit] {
 }
 
 #name{
-    width: 50%;
+    width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -407,7 +407,7 @@ input[type=text], textarea, input[type=submit] {
 }
 
 input[type=email]{
-    width: 50%;
+    width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -417,11 +417,6 @@ input[type=email]{
     margin-right: 0px;
     margin-left: 0px;
     resize: vertical;
-}
-
-.form_contact1{
-    display: flex;
-    gap: 30px;
 }
 
 .form_contact2{
@@ -459,7 +454,6 @@ input[type=submit] {
     color: var(--error-color);
     color: red;
 }
-
 
 .bloc_address, .bloc_mail, .bloc_phone, .bloc_linkedin, .bloc_github{
     display: flex;
