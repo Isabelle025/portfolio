@@ -518,7 +518,7 @@ input[type=submit] {
         height: 1.875rem;
     }
 
-    #title_propos{
+    #title_propos, .title_skills, .title_projects, .title_contact{
         font-size: 6vw;
     }
 
@@ -536,9 +536,17 @@ input[type=submit] {
         flex-direction: column;
     }
 
+    .specific_skills{
+        font-size: 1.125rem;
+    }
+
     .different_skills{
         margin: auto;
         width: 80%;
+    }
+
+    .different_skills > p{
+        font-size: 0.7rem;
     }
 
     .progressbar{
@@ -552,7 +560,11 @@ input[type=submit] {
     }
 
     #projects{
-        margin: 0px;
+        margin: 50px 0px 50px 0px;
+    }
+
+    .title_project1, .title_project2, .title_project3, .title_project4{
+        font-size: 1.25rem;
     }
 
     .js, .github{
@@ -647,6 +659,11 @@ input[type=submit] {
     .coordonnees{
         flex-direction: column;
         margin: auto;
+    }
+
+    .address, .mail, .phone, .linkedin, .github_bis {
+        width: 4.5vw;
+        height: 4.5vw;
     }
 
     .complete_address, .email_address, .phone_number, .link_linkedin, .link_github{
