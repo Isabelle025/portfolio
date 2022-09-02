@@ -567,6 +567,14 @@ input[type=submit] {
         font-size: 1.25rem;
     }
 
+    .project2, .project3, .project4{
+        margin-top: 50px;
+    }
+
+    .right_project1{
+        margin: 0px 50px 0px 50px;
+    }
+
     .js, .github{
         width: 5vw;
         height: 5vw;
@@ -595,10 +603,6 @@ input[type=submit] {
         gap: 0;
     }
 
-    .right_project1{
-        margin: 0;
-    }
-
     .project1, .project3 {
         flex-direction: column;
     }
@@ -612,13 +616,8 @@ input[type=submit] {
         margin: auto;
     }
 
-    .right_project1{
-        flex-direction: column;
-        margin: 0px 50px 0px 100px;
-    }
-
     .left_project2, .right_project3, .left_project4{
-        margin: 0px 50px 0px 100px;
+        margin: 0px 50px 0px 50px;
     }
 
     .descrip_prog{

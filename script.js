@@ -1,11 +1,11 @@
-/*script pour la flèche de retour en haut*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~script pour la flèche de retour en haut~de la page~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 document.addEventListener('DOMContentLoaded', function() {
   window.onscroll = function(event) {
     document.getElementById("back").className = (window.pageYOffset > 100) ? "Visible" : "Invisible";
   };
 });
 
-/*script pour les particles*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~éscript pour les particles~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 particlesJS('particles-js', {
     particles: {
       color: '#1c9494',
