@@ -396,11 +396,9 @@ input[type=text], textarea, input[type=submit] {
 #name{
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
     border-radius: 6px;
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 16px;
     margin-right: 0px;
     margin-left: 0px;
     resize: vertical;
@@ -456,7 +454,7 @@ input[type=submit] {
 }
 
 .form-field small {
-    color: rgb(176, 68, 68);
+    color: rgb(205, 84, 84);
     font-weight: bold; 
 }
 
@@ -502,6 +500,10 @@ input[type=submit] {
         padding-top: 0px;
     }
 
+    #particles-js{
+        display: none;
+    }
+
     .images{
         padding-top: 5rem;
     }
@@ -509,6 +511,19 @@ input[type=submit] {
     .photo{
         width: 3rem; 
         height: 4rem;
+    }
+
+    .star{
+        width: 1.875rem;
+        height: 1.875rem;
+    }
+
+    #title_propos{
+        font-size: 6vw;
+    }
+
+    .first_chapter, .second_chapter{
+        font-size: .875rem;
     }
 
     .skills_container{
@@ -596,18 +611,13 @@ input[type=submit] {
 
     .descrip_prog{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         gap: 3.125rem;
     }
 
     .description_project1, .description_project2, .description_project3, .description_project4{
         font-size: 0.75rem;
-    }
-
-    .left_project2 > .descrip_prog, .left_project4 > .descrip_prog{
-        display: flex;
-        flex-direction: row-reverse;
     }
 
     .programs_project1{
