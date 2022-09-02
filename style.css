@@ -438,26 +438,26 @@ input[type=submit] {
 }
 
 /*messages d'erreurs*/
+.form-field {
+    margin-top: 10px;
+}
 
 .form-field input:focus {
     outline: none;
 }
 
-.form-field.error input {
-    border-color: var(--error-color);
+.form-field.error input{
+    margin: 0px;
+    border: solid 3px red;
 }
 
 .form-field.success input {
-    border-color: var(--success-color);
+    border: solid 3px green;
 }
 
-
 .form-field small {
-    color: var(--error-color);
-    color: #CB272D;
-    font-weight: bold;
-    background-color: #f79396;
-    
+    color: rgb(176, 68, 68);
+    font-weight: bold; 
 }
 
 .bloc_address, .bloc_mail, .bloc_phone, .bloc_linkedin, .bloc_github{

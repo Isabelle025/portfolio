@@ -327,6 +327,11 @@ form.addEventListener('input', debounce(function (e) {
         case 'email':
             checkEmail();
             break;
-            console.log("submit");
+        case 'sujet_error':
+            checkSujet();
+            break;
+        case 'msg_error':
+            checkMsg();
+            break;
     }
 }));
