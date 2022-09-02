@@ -169,6 +169,8 @@ document.querySelector('.content').style.color = random_color;
 //   return true;
 // }
 
+//messages erreurs formulaire de contact
+
 const emailEl = document.querySelector('#email');
 
 const form = document.querySelector('#signup');
@@ -183,10 +185,8 @@ const checkUsername = () => {
 
 const username = document.getElementById('name');
 
-    if (username!="") {
+    if (username.value=="") {
         showError(username, 'Merci de saisir un nom');
-    }else if (!isBetween(username.length, min, max)) {
-        showError(username, `Username must be between ${min} and ${max} characters.`)
     }else {
         showSuccess(username);
         valid = true;
@@ -223,7 +223,7 @@ const checkSujet = () => {
 
 const sujet_error = document.getElementById('sujet');
 
-    if (sujet_error!="") {
+    if (sujet_error.value=="") {
         showError(sujet_error, 'Merci de saisir un sujet');
     }else {
         showSuccess(sujet_error);
@@ -242,7 +242,7 @@ const checkMsg = () => {
 
 const msg_error = document.getElementById('msg');
 
-    if (msg_error!="") {
+    if (msg_error.value=="") {
         showError(msg_error, 'Merci de saisir un message');
     }else {
         showSuccess(msg_error);
