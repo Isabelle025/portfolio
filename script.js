@@ -111,77 +111,13 @@ var colors = ['#34A853', '#FBBC05', '#4285F4', '#7FBC00', '#FFBA01', '#01A6F0'];
 var random_color = colors[Math.floor(Math.random() * colors.length)];
 document.querySelector('.content').style.color = random_color;
 
-//script validation formulaire
-// const envoi = document.getElementById("envoi");
-// document.getElementById("envoi").addEventListener("click", function(){
-//   envoi.onsubmit();
-// })
-
-// function envoi()
-// {
-//   const lancer="oui";
-
-//   if(document.getElementById("email").value==""){
-//     alert("Merci de saisir votre mail");
-//     lancer="non";
-//   }
-//   elseif(document.getElementById("email").value.indexOf("@") ==-1 || document.getElementById("email").value.indexOf(".") == -1 );
-//   {
-//     alert("Votre mail ne semble pas correct, merci de le corriger");
-//     lancer="non";
-//   }
-//   elseif(document.getElementById("sujet").value == "")
-// {
-// alert("Vous devez entrer le sujet de votre message");
-// lancer="non";
-// }
-// elseif((document.getElementById("msg").value == "" || document.getElementById("msg").value.length < 10))
-// {
-// alert("Vous devez renseigner le contenu du message");
-// lancer="non";
-// }
-// if(lancer=="oui")
-// document.getElementById("contact").submit();
-// }
-
-
-// const form = document.querySelector("form");
-// const submit = document.querySelector("submit");
-// form.addEventListener("submit", (e)=>{
-//   e.preventDefault();
-//   validation();
-// })
-
-// function validation(){
-//   const name = document.getElementById("name").value;
-//   const email = document.getElementById("email").value;
-
-
-
-//   if(name.value ==""){
-//     document.getElementById('error_msg');
-//   }
-//   if(email==""){
-//     alert("Merci de saisir un mail");
-//     return false;
-//   }
-//   alert("Toutes les données sont valides")
-//   return true;
-// }
-
-//messages erreurs formulaire de contact
-
-const emailEl = document.querySelector('#email');
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~émessages erreurs formulaire de contact~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 const form = document.querySelector('#signup');
-
 
 const checkUsername = () => {
 
     let valid = false;
-
-    const min = 3,
-        max = 25;
 
 const username = document.getElementById('name');
 
@@ -194,9 +130,11 @@ const username = document.getElementById('name');
     return valid;
 };
 
+const emailEl = document.querySelector('#email');
 
 const checkEmail = () => {
     let valid = false;
+
     const email = emailEl.value.trim();
     if (!isRequired(email)) {
         showError(emailEl, 'Merci de saisir un email');
@@ -218,9 +156,6 @@ const checkSujet = () => {
 
     let valid = false;
 
-    const min = 3,
-        max = 25;
-
 const sujet_error = document.getElementById('sujet');
 
     if (sujet_error.value=="") {
@@ -237,8 +172,6 @@ const checkMsg = () => {
 
     let valid = false;
 
-    const min = 3,
-        max = 25;
 
 const msg_error = document.getElementById('msg');
 
@@ -278,8 +211,8 @@ const showSuccess = (input) => {
     formField.classList.add('success');
 
     // hide the error message
-    const error = formField.querySelector('small');
-    error.textContent = '';
+    const success = formField.querySelector('small');
+    success.textContent = '';
 }
 
 

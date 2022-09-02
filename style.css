@@ -446,12 +446,12 @@ input[type=submit] {
     outline: none;
 }
 
-.form-field.error input{
+.form-field.error input, .form-field.error textarea{
     margin: 0px;
     border: solid 3px red;
 }
 
-.form-field.success input {
+.form-field.success input, .form-field.success textarea {
     border: solid 3px green;
 }
 
