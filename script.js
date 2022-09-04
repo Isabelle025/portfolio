@@ -53,6 +53,13 @@ particlesJS('particles-js', {
     retina_detect: true
   });
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~émenu burger~~~~~~~~~~~~~~~~~~~~~~*/
+var toggleButton = document.querySelector('.toggle-menu');
+var navBar = document.querySelector('.nav-bar');
+toggleButton.addEventListener('click', function () {
+	navBar.classList.toggle('toggle');
+});
+
 /*observer présentation*/
 
 const firstChapter = document.querySelector(".first_chapter");
