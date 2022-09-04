@@ -500,12 +500,8 @@ input[type=submit] {
         padding-top: 0px;
     }
 
-    #particles-js{
-        display: none;
-    }
-
     .images{
-        padding-top: 5rem;
+        padding-top: 3rem;
     }
 
     .photo{
@@ -576,8 +572,8 @@ input[type=submit] {
     }
 
     .js, .github{
-        width: 5vw;
-        height: 5vw;
+        width: 2.5rem;
+        height: 2.5rem;
     }
     
     .figma{
@@ -661,8 +657,8 @@ input[type=submit] {
     }
 
     .address, .mail, .phone, .linkedin, .github_bis {
-        width: 4.5vw;
-        height: 4.5vw;
+        width: 5vw;
+        height: 5vw;
     }
 
     .complete_address, .email_address, .phone_number, .link_linkedin, .link_github{
@@ -720,8 +716,8 @@ input[type=submit] {
     }
 
     .js, .github{
-        width: 5vw;
-        height: 5vw;
+        width: 2.5rem;
+        height: 2.5rem;
     }
     
     .figma{
@@ -810,6 +806,11 @@ input[type=submit] {
         align-items: start;
     }
 
+    .address, .mail, .phone, .linkedin, .github_bis {
+    width: 3.6vw;
+    height: 3.6vw;
+    }
+
     .complete_address, .email_address, .phone_number, .link_linkedin, .link_github{
         font-size: 1rem;
     }
@@ -865,8 +866,8 @@ input[type=submit] {
     }
 
     .js, .github{
-        width: 5vw;
-        height: 5vw;
+        width: 3.125rem;
+        height: 3.125rem;
     }
     
     .figma{
