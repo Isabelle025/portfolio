@@ -53,7 +53,48 @@ particlesJS('particles-js', {
     retina_detect: true
   });
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~éobserver présentation~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~menu burger~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+const menuBurger = document.querySelector(".menu_burger");
+const rubrics = document.querySelector(".rubrics");
+const links = document.querySelectorAll(".rubrics li");
+
+/*let car on change les valeurs, le modulo sert à savoir si c'est ouvert ou fermé*/
+let modulo = 1;
+menuBurger.addEventListener('click', ()=>{
+    //on incrémante le modulo au click
+    modulo++;
+    if(modulo % 2 === 0){
+        
+        rubrics.classList.add("open");
+        
+        links.forEach(link => {
+            //animation fade de chaque link
+            link.classList.add("fade");
+            link.addEventListener('click', ()=>{
+                modulo=1;
+                closingMenu();
+            })
+        });
+        
+        //changer le burger en croix
+        menuBurger.classList.add("toggle");
+    }else{
+        closingMenu();
+    } 
+});
+
+function closingMenu(){
+    //ferme le menu
+    rubrics.classList.remove("open");
+    //retire l'animation de chaque lien
+    links.forEach(link => {
+        link.classList.remove("fade");
+    });
+    
+    //remettre le burger
+    menuBurger.classList.remove("toggle");
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~observer présentation~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 const firstChapter = document.querySelector(".first_chapter");
 const secondChapter = document.querySelector(".second_chapter");
