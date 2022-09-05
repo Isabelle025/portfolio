@@ -93,12 +93,21 @@ const callback = function( entries ) {
 const myTags = [
     'JavaScript', 'CSS', 'HTML',
     'MySql', 'git', 'PHP',
-    'Bash', 'Figma', 'Ubuntu', 'WordPress',
+    'Bash', 'Figma', 'Ubuntu',
 ];
+
+if (window.matchMedia("(min-width: 992px)").matches) {
+    var radius = 200;
+    /*taille du radius en taille min desktop*/
+  } else {
+    var radius = 150;
+    /*taille du radius en responsive*/
+  }
 
 var tagCloud = TagCloud('.content', myTags,{
 
-  radius: 200,
+    radius: radius,
+  
 
   maxSpeed: 'slow',
   initSpeed: 'slow',

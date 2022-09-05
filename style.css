@@ -395,7 +395,6 @@ canvas {
 .tagcloud {
     font-size: 1vw;
     margin: auto;
-    width: 50%;
 }
   
 .tagcloud--item:hover {
@@ -682,7 +681,7 @@ input[type=submit] {
 
     .tagcloud{
         font-size: 3vw;
-        width: 100%;
+        width: 300px;
         display: none;
     }
 
