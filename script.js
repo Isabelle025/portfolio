@@ -6,6 +6,15 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~éscript pour les particles~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+if (window.matchMedia("(min-width: 992px)").matches) {
+    var particle = 150;
+    /*taille du radius en taille min desktop*/
+  } else {
+    var particle = 50;
+    /*taille du radius en responsive*/
+  }
+
+
 particlesJS('particles-js', {
     particles: {
       color: '#1c9494',
@@ -13,7 +22,7 @@ particlesJS('particles-js', {
       opacity: 1,
       size: 4,
       size_random: true,
-      nb: 150,
+      nb: particle,
       line_linked: {
         enable_auto: true,
         distance: 100,
