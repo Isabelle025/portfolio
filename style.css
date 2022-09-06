@@ -137,14 +137,13 @@ canvas {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 12.5rem;
     position: absolute;
     transform: translateX(80%);
 }
 
 .photo{
-    width: 16.7vw; 
-    height: 35.7vh;
+    width: 20rem; 
+    height: 21.25rem;
 }
 
 .presentation{
@@ -507,90 +506,13 @@ input[type=submit] {
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~responsive~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-@media screen and (min-width: 320px) and (max-width: 577px){
-    .menu_burger{
-        display:block;
-        position: absolute;
-        cursor: pointer;
-        right: 5%;
-        top: 5%;
-        transform: translate(-5%, -50%);
-        z-index: 1000;
-        transition: all 0.7s ease;
-    }
-
+@media screen and (min-width: 769px) and (max-width: 992px) {
     .rubrics{
-        position: fixed;
-        background: #131418;
-        height: 100vh;
-        width: 100%;
-        flex-direction: column;
-        clip-path: circle(50px at 90% -20%);
-        -webkit-clip-path: circle(50px at 90% -10%);
-        transition: all 1s ease-out;
-        pointer-events: none;
-    }
-
-    .rubrics.open{
-        clip-path: circle(1000px at 90% -10%);
-        -webkit-clip-path: circle(1000px at 90% -10%);
-        pointer-events: all;
-    }
-    .rubrics li{
-        opacity: 0;
-    }
-
-    .rubrics li:nth-child(1){
-        transition: all 0.5s ease 0.2s;
-    }
-    .rubrics li:nth-child(2){
-        transition: all 0.5s ease 0.4s;
-    }
-    .rubrics li:nth-child(3){
-        transition: all 0.5s ease 0.6s;
-    }
-    .rubrics li:nth-child(4){
-        transition: all 0.5s ease 0.7s;
-    }
-    .rubrics li:nth-child(5){
-        transition: all 0.5s ease 0.8s;
-    }
-
-    li.fade{
-        opacity: 1;
-    }
-}
-/*Animating Hamburger Icon on Click*/
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
-}
-.toggle .line2{
-    transition: all 0.7s ease;
-    width:0;
-}
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
-}
-
-    .content{
-        display:none;
+        padding-top: 0px;
     }
 
     .images{
-        padding-top: 2rem;
-    }
-
-    .star{
-        width: 1.875rem;
-        height: 1.875rem;
-    }
-
-    #title_propos, .title_skills, .title_projects, .title_contact{
-        font-size: 6vw;
-    }
-
-    .first_chapter, .second_chapter{
-        font-size: .875rem;
+        padding-top: 5rem;
     }
 
     .skills_container{
@@ -603,52 +525,34 @@ input[type=submit] {
         flex-direction: column;
     }
 
-    .specific_skills{
-        font-size: 1.125rem;
-    }
-
     .different_skills{
         margin: auto;
         width: 80%;
-    }
-
-    .different_skills > p{
-        font-size: 0.7rem;
     }
 
     .progressbar{
         width: 100%;
     }
 
+    .content{
+        margin: auto;
+    }
+
     .tagcloud{
         font-size: 3vw;
-        width: 300px;
-        display: none;
     }
 
     #projects{
-        margin: 50px 0px 50px 0px;
-    }
-
-    .title_project1, .title_project2, .title_project3, .title_project4{
-        font-size: 1.25rem;
-    }
-
-    .project2, .project3, .project4{
-        margin-top: 50px;
-    }
-
-    .right_project1{
-        margin: 0px 50px 0px 50px;
+        margin: 0px;
     }
 
     .js, .github{
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 3.125rem;
+        height: 3.125rem;
     }
     
     .figma{
-        width: 6vw;
+        width: 4.5vw;
         height: 6.3vh;
     }
 
@@ -657,17 +561,8 @@ input[type=submit] {
     }
 
     .oeuvre1, .oeuvre2{
-        width: 15.625rem;
-        height: 10.6875rem;
-    }
-
-    .oeuvre3, .oeuvre4{
-        width: 15.625rem;
-        height: 12.5625rem;
-    }
-
-    .project1, .project2, .project3, .project4{
-        gap: 0;
+        width: 25rem;
+        height: 17.125rem;
     }
 
     .project1, .project3 {
@@ -683,19 +578,29 @@ input[type=submit] {
         margin: auto;
     }
 
+    .right_project1{
+        flex-direction: column;
+        margin: 0px 50px 0px 100px;
+    }
+
     .left_project2, .right_project3, .left_project4{
-        margin: 0px 50px 0px 50px;
+        margin: 0px 50px 0px 100px;
     }
 
     .descrip_prog{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         gap: 3.125rem;
     }
 
     .description_project1, .description_project2, .description_project3, .description_project4{
-        font-size: 0.75rem;
+        font-size: 1.25rem;
+    }
+
+    .left_project2 > .descrip_prog, .left_project4 > .descrip_prog{
+        display: flex;
+        flex-direction: row-reverse;
     }
 
     .programs_project1{
@@ -723,13 +628,13 @@ input[type=submit] {
     }
 
     .coordonnees{
-        flex-direction: column;
-        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
-    .address, .mail, .phone, .linkedin, .github_bis {
-        width: 5vw;
-        height: 5vw;
+    .coordonnees_bottom{
+        align-items: start;
     }
 
     .complete_address, .email_address, .phone_number, .link_linkedin, .link_github{
@@ -737,8 +642,9 @@ input[type=submit] {
     }
 
     .mentions_legales{
-        font-size: .625rem;;
+        font-size: 1rem;;
     }
+}
 
 @media screen and (min-width: 578px) and (max-width: 768px) {
 
@@ -748,11 +654,6 @@ input[type=submit] {
 
     .images{
         padding-top: 5rem;
-    }
-
-    .photo{
-        width: 6.5rem; 
-        height: 8rem;
     }
 
     .skills_container{
@@ -891,150 +792,10 @@ input[type=submit] {
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
-    .rubrics{
-        padding-top: 0px;
-    }
 
-    .images{
-        padding-top: 5rem;
-    }
 
-    .photo{
-        width: 6.5rem; 
-        height: 8rem;
-    }
 
-    .skills_container{
-        flex-direction: column;
-    }
 
-    .skills{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .different_skills{
-        margin: auto;
-        width: 80%;
-    }
-
-    .progressbar{
-        width: 100%;
-    }
-
-    .content{
-        margin: auto;
-    }
-
-    .tagcloud{
-        font-size: 3vw;
-    }
-
-    #projects{
-        margin: 0px;
-    }
-
-    .js, .github{
-        width: 3.125rem;
-        height: 3.125rem;
-    }
-    
-    .figma{
-        width: 4.5vw;
-        height: 6.3vh;
-    }
-
-    .title_project1, .title_project2, .title_project3, .title_project3, .title_project4{
-        font-size: 1.5rem;
-    }
-
-    .oeuvre1, .oeuvre2{
-        width: 25rem;
-        height: 17.125rem;
-    }
-
-    .project1, .project3 {
-        flex-direction: column;
-    }
-
-    .project2, .project4{
-        flex-direction: column-reverse;
-    }
-
-    .left_project1, .right_project2, .left_project3, .right_project4{
-        display: flex;
-        margin: auto;
-    }
-
-    .right_project1{
-        flex-direction: column;
-        margin: 0px 50px 0px 100px;
-    }
-
-    .left_project2, .right_project3, .left_project4{
-        margin: 0px 50px 0px 100px;
-    }
-
-    .descrip_prog{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 3.125rem;
-    }
-
-    .description_project1, .description_project2, .description_project3, .description_project4{
-        font-size: 1.25rem;
-    }
-
-    .left_project2 > .descrip_prog, .left_project4 > .descrip_prog{
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
-    .programs_project1{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .prog_top, .prog_bottom{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .title_project1, .title_project2, .title_project3, .title_project4{
-        text-align: center;
-    }
-
-    .formulaire_contact{
-        margin: auto;
-        width: 90%;}
-
-    .complete_contact{
-        flex-direction: column;
-    }
-
-    .coordonnees{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .coordonnees_bottom{
-        align-items: start;
-    }
-
-    .complete_address, .email_address, .phone_number, .link_linkedin, .link_github{
-        font-size: 1rem;
-    }
-
-    .mentions_legales{
-        font-size: 1rem;;
-    }
-}
 
 
 
