@@ -139,6 +139,7 @@ canvas {
     flex-direction: column;
     position: absolute;
     transform: translateX(80%);
+    top: 20%;
 }
 
 .photo{
@@ -266,7 +267,7 @@ canvas {
     width: 90%;
 }
 
-.PHP {
+.MySQL {
     width: 80%;
 }
 

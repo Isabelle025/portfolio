@@ -132,7 +132,7 @@ const callback = function( entries ) {
     observer.observe(secondChapter);
     
     
-// script pour le nuage de mots
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~script pour le nuage de mots~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const myTags = [
     'JavaScript', 'CSS', 'HTML',
     'MySql', 'git', 'PHP',
@@ -170,7 +170,7 @@ var colors = ['#34A853', '#FBBC05', '#4285F4', '#7FBC00', '#FFBA01', '#01A6F0'];
 var random_color = colors[Math.floor(Math.random() * colors.length)];
 document.querySelector('.content').style.color = random_color;
 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~émessages erreurs formulaire de contact~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~messages erreurs formulaire de contact~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 const form = document.querySelector('#signup');
 
