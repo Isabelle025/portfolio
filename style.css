@@ -558,7 +558,7 @@ input[type=submit] {
     }
 
     .title_project1, .title_project2, .title_project3, .title_project3, .title_project4{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .oeuvre1, .oeuvre2{
@@ -596,7 +596,7 @@ input[type=submit] {
     }
 
     .description_project1, .description_project2, .description_project3, .description_project4{
-        font-size: 1.25rem;
+        font-size: 1.6rem;
     }
 
     .left_project2 > .descrip_prog, .left_project4 > .descrip_prog{
