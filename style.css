@@ -91,8 +91,10 @@ canvas {
 
 .menu_burger{
     display: none;
+    position: relative;
+    top: 20px;
+    left: 200vh;
 }
-
 
 .propos, .competences, .link_contact, .name, .profession{
     color: #eae8ff;
