@@ -63,46 +63,46 @@ particlesJS('particles-js', {
   });
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~menu burger~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-const menuBurger = document.querySelector(".menu_burger");
-const rubrics = document.querySelector(".rubrics");
-const links = document.querySelectorAll(".rubrics li");
+// const menuBurger = document.querySelector(".menu_burger");
+// const rubrics = document.querySelector(".rubrics");
+// const links = document.querySelectorAll(".rubrics li");
 
-/*let car on change les valeurs, le modulo sert à savoir si c'est ouvert ou fermé*/
-let modulo = 1;
-menuBurger.addEventListener('click', ()=>{
-    //on incrémante le modulo au click
-    modulo++;
-    if(modulo % 2 === 0){
+// /*let car on change les valeurs, le modulo sert à savoir si c'est ouvert ou fermé*/
+// let modulo = 1;
+// menuBurger.addEventListener('click', ()=>{
+//     //on incrémante le modulo au click
+//     modulo++;
+//     if(modulo % 2 === 0){
         
-        rubrics.classList.add("open");
+//         rubrics.classList.add("open");
         
-        links.forEach(link => {
-            //animation fade de chaque link
-            link.classList.add("fade");
-            link.addEventListener('click', ()=>{
-                modulo=1;
-                closingMenu();
-            })
-        });
+//         links.forEach(link => {
+//             //animation fade de chaque link
+//             link.classList.add("fade");
+//             link.addEventListener('click', ()=>{
+//                 modulo=1;
+//                 closingMenu();
+//             })
+//         });
         
-        //changer le burger en croix
-        menuBurger.classList.add("toggle");
-    }else{
-        closingMenu();
-    } 
-});
+//         //changer le burger en croix
+//         menuBurger.classList.add("toggle");
+//     }else{
+//         closingMenu();
+//     } 
+// });
 
-function closingMenu(){
-    //ferme le menu
-    rubrics.classList.remove("open");
-    //retire l'animation de chaque lien
-    links.forEach(link => {
-        link.classList.remove("fade");
-    });
+// function closingMenu(){
+//     //ferme le menu
+//     rubrics.classList.remove("open");
+//     //retire l'animation de chaque lien
+//     links.forEach(link => {
+//         link.classList.remove("fade");
+//     });
     
-    //remettre le burger
-    menuBurger.classList.remove("toggle");
-}
+//     //remettre le burger
+//     menuBurger.classList.remove("toggle");
+// }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~observer présentation~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 const firstChapter = document.querySelector(".first_chapter");
@@ -330,15 +330,25 @@ form.addEventListener('input', debounce(function (e) {
 
 // menu burger
 
-const openMobileMenuBtn = document.querySelector(".device-menu");
-const headerMenu = document.querySelector(".header-nav");
+// const openMobileMenuBtn = document.querySelector(".device-menu");
+// const headerMenu = document.querySelector(".header-nav");
 
-openMobileMenuBtn.addEventListener("click", () => {
-  if(openMobileMenuBtn.classList.contains("open")) {
-    openMobileMenuBtn.classList.remove("open");
-    headerMenu.classList.remove("active");
-  } else {
-    headerMenu.classList.add("active");
-    openMobileMenuBtn.classList.add("open");
-  }
-})
+// openMobileMenuBtn.addEventListener("click", () => {
+//   if(openMobileMenuBtn.classList.contains("open")) {
+//     openMobileMenuBtn.classList.remove("open");
+//     headerMenu.classList.remove("active");
+//   } else {
+//     headerMenu.classList.add("active");
+//     openMobileMenuBtn.classList.add("open");
+//   }
+// })
+
+function toggleMenu(){
+    const navbar = document.querySelector('.navbar');
+    const burger = document.querySelector('.burger');
+    burger.addEventListener('click', () => {
+        navbar.classList.toggle('show-nav');
+    });
+}
+
+toggleMenu();

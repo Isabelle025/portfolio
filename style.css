@@ -66,11 +66,11 @@ canvas {
 #particles-js {
     overflow-x: hidden;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #03181D;
 }
 
-.rubrics{
+/* .rubrics{
     display: flex;
     align-items: center;  
     position: absolute;
@@ -79,9 +79,9 @@ canvas {
     z-index: 999;
     list-style: none;
     padding-left: 0px;
-}
+} */
 
-.menu_burger div{
+/* .menu_burger div{
     width: 30px;
     height:3px;
     background: #f2f5f7;
@@ -94,16 +94,16 @@ canvas {
     position: relative;
     top: 20px;
     left: 200vh;
-}
+} */
 
-.propos, .competences, .link_contact, .name, .profession{
+.propos, .competences, .projects, .CV, .link_contact, .name, .profession{
     color: #eae8ff;
     font-weight: 700;
     font-size: 2.5vw;
     margin:0;
 }
 
-.propos, .competences, .link_contact, .logo_projects{
+/*.propos, .competences, .link_contact, .logo_projects{
     cursor: pointer;
 }
 
@@ -115,17 +115,180 @@ canvas {
 .propos :hover, .competences :hover, .link_contact :hover{
     text-decoration: none;
     color:#1C9494;
+} */
+
+/* .logo_projects:hover, .logo_CV:hover{
+    filter: invert(48%) sepia(88%) saturate(390%) hue-rotate(131deg) brightness(83%) contrast(90%);
+} */
+
+ul{
+    list-style: none;
 }
 
-.logo_projects:hover, .logo_CV:hover{
-    filter: invert(48%) sepia(88%) saturate(390%) hue-rotate(131deg) brightness(83%) contrast(90%);
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 10px; */
+    position: absolute;
+    /* left: 20%;   */
+    width: 100%;
+    height: 100%; 
+}
+
+.navbar_links{
+    display: flex;
+}
+
+.navbar_link{
+    padding: 0 10px;
+}
+
+.navbar_link > a{
+    color: white;
+    text-decoration: none;
+}
+
+.burger{
+    display: none;
+}
+
+@media screen and (max-width: 767px){
+    .navbar_links{
+        display: flex;
+        flex-direction: column;
+        width: 0;
+        height: 100vh;
+        /* height:calc(100vh - 65px); */
+        position: absolute;
+        /* top: 65px; */
+        right:0;
+        background-color: #031b1d;
+        transition:all .5s ease-in-out;
+        padding-top: 60px;
+    }
+    
+    .navbar_link{
+        transform: translateX(101%);
+    }
+
+    .show-nav .navbar_link{
+        transform: translateX(0);
+    }
+
+    .show-nav .navbar_links{
+        width: 100%;
+    }
+
+    .navbar_link > a{
+        display: block;
+        padding: 1rem;
+        font-size: 1.6rem;
+        transition:all .4s ease-in-out;
+    }
+
+    .navbar_link > a:hover{
+        padding-left: 2rem;
+        letter-spacing: 5px;;
+    }
+
+    .burger{
+        display: block;
+        position: absolute;
+        padding: 0;
+        width: 45px;
+        height: 45px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        top: 0;
+        right: 10px;
+    }
+
+    .bar{
+        display: block;
+        width: 45px;
+        height: 4px;
+        background-color: white;
+        border-radius: 3px;
+        transition:all .5s ease-in-out;
+    }
+
+    .show-nav .bar{
+        width: 0;
+        background: transparent;
+    }
+
+    .bar::before, .bar::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 45px;
+        height: 4px;
+        background-color: white;
+        border-radius: 3px;
+        transition:all .5s ease-in-out;
+    }
+
+    .bar::before{
+        transform: translateY(-12px);
+    }
+
+    .show-nav .bar::before{
+        transform:rotate(45deg);
+    }
+
+    .bar::after{
+        transform: translateY(12px);
+    }
+
+    .show-nav .bar::after{
+        transform:rotate(-45deg);
+    }
+
+    .show-nav .first{
+        transition: all 1s ease-out;
+    }
+
+    .show-nav .second{
+        transition: all 1.1s ease-out;
+    }
+
+    .show-nav .third{
+        transition: all 1.2s ease-out;
+    }
+
+    .show-nav .fourth{
+        transition: all 1.3s ease-out;
+    }
+
+    .show-nav .fifth{
+        transition: all 1.4s ease-out;
+    }
+ 
+}
+
+
+@media screen and (min-width: 768px){
+    .navbar_link > a::after{
+        display: block;
+        content: "";
+        width:0;
+        height: 1px;
+        background-color: white;
+        transition:width .4s;
+    }
+
+    .navbar_link:hover > a::after{
+        width: 100%;
+}
 }
 
 .name, .profession{
     margin-top: .625rem;
 }
 
-.logo_CV{
+/* .logo_CV{
     width: 5.2vw;
     height: 10.5vh;
 }
@@ -133,15 +296,15 @@ canvas {
 .logo_projects{
     width: 5.2vw;
     height: 10.5vh;
-}
+} */
 
 .images{
     display: flex;
     align-items: center;
     flex-direction: column;
     position: absolute;
-    transform: translateX(80%);
-    top: 20%;
+    top: 200%;
+    left: 20%;
 }
 
 .photo{
