@@ -138,6 +138,9 @@ ul{
 
 .navbar_links{
     display: flex;
+    position: absolute;
+    top: 20px;
+    transform: translateX(25%);
 }
 
 .navbar_link{
@@ -166,6 +169,8 @@ ul{
         background-color: #031b1d;
         transition:all .5s ease-in-out;
         padding-top: 60px;
+        z-index:1;
+        padding-left:0;
     }
     
     .navbar_link{
@@ -203,6 +208,7 @@ ul{
         cursor: pointer;
         top: 0;
         right: 10px;
+        z-index:1;
     }
 
     .bar{
@@ -302,9 +308,9 @@ ul{
     display: flex;
     align-items: center;
     flex-direction: column;
-    position: absolute;
-    top: 200%;
-    left: 20%;
+    position: relative;
+    margin:auto;
+    top: 8%;
 }
 
 .photo{
@@ -955,6 +961,17 @@ input[type=submit] {
 
     .mentions_legales{
         font-size: 1rem;;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 577px){
+    .navbar_links{
+        top:0;
+        transform:translateX(0%);
+        margin-top:0;
+    }
+    .images{
+        top: 0;
     }
 }
 
