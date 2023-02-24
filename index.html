@@ -119,7 +119,15 @@
 
             <div class="project1">
                 <div class="left_project1">
-                    <img class="oeuvre1" src="images/projet1.png" alt="image de la page d'accueil du site que j'ai créé">
+                    <picture>
+                        <source srcset="images/projet1-S.png 300w,
+                                images/projet1-M.png 1024w,
+                                images/projet1-L.png  1920w"
+                         sizes="(max-width: 340px) 300px,
+                                (max-width: 1260px) 1000px,
+                                1920px" />
+                        <img src="images/projet1.png" alt="image de la page d'accueil du site que j'ai créé" />
+                    </picture>
                 </div>
                 <div class="right_project1">
                     <a href="https://github.com/Isabelle025/artiste_collagiste" target="blank"><p class="title_project1">Site Drogül Le Mogül</a></p>
@@ -152,7 +160,15 @@
                     </div>
                 </div>
                 <div class="right_project2">
-                    <img class="oeuvre2" src="images/maquette Octocat.png" alt="maquette réalisé sur Figma">
+                    <picture>
+                        <source srcset="images/maquette_Octocat-S.png 300w,
+                                images/maquette_Octocat-M.png 1024w,
+                                images/maquette_Octocat-L.png  1920w"
+                         sizes="(max-width: 340px) 300px,
+                                (max-width: 1260px) 1000px,
+                                1920px" />
+                        <img src="images/maquette Octocat.png" alt="maquette réalisé sur Figma" />
+                    </picture>
                 </div>
             </div>
            

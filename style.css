@@ -973,6 +973,33 @@ input[type=submit] {
     .images{
         top: 0;
     }
+
+    .name, .profession{
+        font-size: 4vw;
+    }
+
+    .first_chapter, .second_chapter{
+        font-size: 4vw;
+    }
+    #title_propos{
+        font-size: 7vw;
+    }
+
+    .presentation{
+        margin: 10px;
+    }
+
+    .skills_container{
+        flex-direction: column;
+    }
+
+    .different_skills{
+        width: 100%;
+    }
+
+    .title_skills, .title_projects, .title_contact{
+        font-size: 7vw;
+    }
 }
 
 
