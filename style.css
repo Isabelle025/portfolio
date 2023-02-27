@@ -1000,6 +1000,10 @@ input[type=submit] {
         padding: 0 15px 0 15px;
     }
 
+    .specific_skills{
+        font-size: 25px;
+    }
+
     .progressbar{
         width: 100%;
     }
@@ -1043,12 +1047,25 @@ input[type=submit] {
         width: 90%;
     }
 
+    #contact{
+        padding: 0 15px 0 15px;
+    }
+
+    .mentions_legales{
+        padding: 15px;
+    }
+
     .complete_contact{
         flex-direction: column;
     }
 
     .formulaire_contact{
         width: 100%;
+    }
+
+    .address, .mail, .phone, .linkedin, .github_bis{
+        width: 6vw;
+        height: 6vw;
     }
 }
 
