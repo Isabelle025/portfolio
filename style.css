@@ -527,7 +527,13 @@ ul{
     align-items: flex-end;
 }
 
-.left_project2, .left_project4{
+.left_project2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left_project4{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
