@@ -457,7 +457,8 @@ ul{
 }
   
 .tagcloud--item:hover {
-    color: #36454F;
+    color: #1C9494;
+    font-size: 4vw;
 }
 
 
