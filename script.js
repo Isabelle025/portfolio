@@ -348,12 +348,16 @@ const burger = document.querySelector('.burger');
 const navbar = document.querySelector('.navbar');
 
 function toggleMenu(){
-    burger.addEventListener('click', () => {
         navbar.classList.toggle('show-nav');
-    });
 }
 
-toggleMenu();
+burger.addEventListener("click", toggleMenu);
+
+
+ 
+
+
+
 
 
 
