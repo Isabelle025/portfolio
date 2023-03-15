@@ -353,7 +353,10 @@ function toggleMenu(){
 
 burger.addEventListener("click", toggleMenu);
 
-
+const detectMobile = () => {
+    window.innerWidth < 767 ? burger.addEventListener("click", toggleMenu) : burger.removeEventListener("click", toggleMenu)
+}
+detectMobile();
  
 
 
