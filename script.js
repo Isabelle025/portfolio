@@ -348,13 +348,17 @@ const burger = document.querySelector('.burger');
 const navbar = document.querySelector('.navbar');
 
 function toggleMenu(){
-        navbar.classList.toggle('show-nav');
+    navbar.classList.toggle('show-nav');
 }
 
 burger.addEventListener("click", toggleMenu);
 
 
- 
+/* JONATHAN */
+const detectMobile = () => {
+    window.innerWidth < 767 ? burger.addEventListener("click", toggleMenu) : burger.removeEventListener("click", toggleMenu)
+}
+detectMobile();
 
 
 
